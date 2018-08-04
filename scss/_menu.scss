@@ -1,3 +1,4 @@
+// Menu Button
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -44,8 +45,9 @@
   visibility: hidden;
 
   &.show {
-    visibility: visible;
+     visibility: visible;
   }
+
 
   &-branding, 
   &-nav {
