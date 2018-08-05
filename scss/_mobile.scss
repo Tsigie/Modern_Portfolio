@@ -46,6 +46,17 @@
       height: 150px;
     }
   }
+
+  .about-info {
+    grid-template-areas: 
+    'bioimage'
+    'bio'
+    'broject1'
+    'broject2'
+    'broject3';
+
+    grid-template-columns: 1fr;
+  }
 }
 // Smart Phones
 @include mediaSm {
