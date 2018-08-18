@@ -1,10 +1,22 @@
 @import 'config';
 @import 'menu';
 
+/* apply a natural box layout model to all elements, but allowing components to change */
 
-* {
+html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// * {
+//   box-sizing: border-box;
+// }
 body {
   @include background;
   background: $primary-color;
@@ -86,11 +98,13 @@ main {
   margin: auto;
   border-radius: 50%;
   border: $secondary-color 3px solid;
+  height:230px;
+  width:230px;
 }
 
 .bio {
   grid-area: bio;
-  font-size: 1.5rem;
+  // font-size: 1.5rem;
 }
 
 .project-1 {
@@ -143,7 +157,7 @@ main {
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
-    @include EaseOut;
+    @include easeOut;
 
     &:hover {
       padding: 0.5rem 1.5rem;
