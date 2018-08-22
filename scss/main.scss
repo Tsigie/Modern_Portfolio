@@ -14,9 +14,9 @@ html {
   box-sizing: inherit;
 }
 
-// * {
-//   box-sizing: border-box;
-// }
+  //  {
+  //    box-sizing: border-box;
+  //   }
 body {
   @include background;
   background: $primary-color;
@@ -104,7 +104,7 @@ main {
 
 .bio {
   grid-area: bio;
-  // font-size: 1.5rem;
+   font-size: 1rem;
 }
 
 .project-1 {
