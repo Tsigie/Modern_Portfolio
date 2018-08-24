@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu';
+@import 'mobile';
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 
@@ -200,4 +201,4 @@ main {
   color: set-text-color($primary-color);
   height: 60px;
 }
-@import 'mobile';
+// @import 'mobile';
